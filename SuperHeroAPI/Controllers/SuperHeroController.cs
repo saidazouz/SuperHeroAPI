@@ -15,13 +15,6 @@ namespace SuperHeroAPI.Controllers
             _context = Context;
         }
 
-        /*public static List<SuperHero> heros = new List<SuperHero>
-            {
-                new SuperHero { Id = 1, Name = "Batman",FirstName ="Bruce",LastName="Wayne",Place ="Manhaten" },
-                new SuperHero { Id = 2, Name = "SpiderMan",FirstName ="Piter",LastName="Parker",Place ="New York" },
-                new SuperHero { Id = 3, Name = "StrawHate", FirstName = "Monkey", LastName = "D Luffy ", Place = "New world" }
-            };*/
-
         [HttpGet]
         public async Task<ActionResult<List<SuperHero>>> Get()
         {
